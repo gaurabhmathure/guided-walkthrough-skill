@@ -1,0 +1,50 @@
+/* ── Guided tour overlay ─────────────────────────────────── */
+/* Append this block to the target repo's global stylesheet (e.g. src/index.css).
+   Assumes CSS custom properties --radius-lg already exist in that stylesheet's
+   :root — if not, replace var(--radius-lg) below with a literal px value (12px
+   is a reasonable default). Pick a z-index above
+   whatever this app's highest existing overlay/toast layer already uses. */
+.tour-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  pointer-events: none;
+}
+.tour-spotlight {
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  transition: top 0.15s ease, left 0.15s ease, width 0.15s ease, height 0.15s ease;
+}
+.tour-tooltip {
+  position: absolute;
+  pointer-events: auto;
+  width: 300px;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  transition: top 0.15s ease, left 0.15s ease;
+}
+.tour-tooltip-title {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 6px;
+  padding-right: 20px;
+}
+.tour-tooltip-body {
+  font-size: 13px;
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+.tour-skip-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.tour-tooltip-dismiss {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+}

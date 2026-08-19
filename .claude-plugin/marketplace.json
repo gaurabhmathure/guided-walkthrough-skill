@@ -1,0 +1,12 @@
+{
+  "name": "guided-walkthrough",
+  "metadata": {
+    "description": "Claude Code skill that builds a spotlight-based guided tour for a specific feature/flow in a React/Vite app, reusing a shared tour engine so one app can accumulate multiple named tours over time."
+  },
+  "owner": {
+    "name": "Gaurabh Mathure"
+  },
+  "plugins": [
+    { "name": "guided-walkthrough", "source": "./" }
+  ]
+}
