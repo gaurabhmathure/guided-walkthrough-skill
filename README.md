@@ -1,4 +1,4 @@
-# guided-walkthrough (Claude Code Skill)
+# guided-walkthrough 
 
 ## What it does
 
