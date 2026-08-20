@@ -7,7 +7,7 @@ Builds a spotlight-based, self-driven product tour for one specific flow in a Re
 ## Scope / prerequisites
 
 - Built for React/Vite apps with a JSX component tree and a global stylesheet.
-- Originally written against the Claude-Prototypes cape-* family of apps, so `SKILL.md` includes concrete file-path and class-name examples from that family (e.g. `src/context/GuidedTourContext.jsx`, `.btn-primary`). It is not a copy-paste template — it includes its own explicit step for checking and adapting button/class conventions to whatever the target repo actually uses.
+- The `SKILL.md` includes concrete file-path and class-name examples from the original demo app (e.g. `src/context/GuidedTourContext.jsx`, `.btn-primary`). It is not a copy-paste template — but it includes its own explicit step for checking and adapting button/class conventions to whatever the target repo actually uses.
 - Meant to be applied by a Claude Code agent that reads and adapts the skill per-repo, not run as a static script.
 - No backend dependency — purely a frontend/UI pattern.
 
